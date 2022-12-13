@@ -1,35 +1,72 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.container
+.container {
+  display: grid;
+  grid-template-rows: [] 0px [] 350px [] 350px;
+  border: 1px solid rgb(0, 8, 255);
+  height: 1000px;
+}
+/* div one have head class and contain 2 sec (sec_head1 / sec_head2) */
+.head {
+  border: 1px solid red;
+  height: 750px;
+  width: 100%;
+  /* position: absolute; */
+}
+.sec_head1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.head_img {
+  /* background-image: '../img/13960-mountain-peak-snow-clouds-sky-italy-4k.jpg'; */
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  z-index: 0;
+  /* top: 0; */
+}
+.head_p_up {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  /* background: rgba(182, 182, 182, 0.178); */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: [] 30% []10% []3% []2% [] 55%;
+}
+.head_p_up p:nth-child(1) {
+  color: red;
+  grid-row: 2/3;
+  color: #10cab7;
+  font-size: 75px;
+  font-weight:700;
+}
+.head_p_up p:nth-child(2) {
+  color: #494949;
+  grid-row: 3/4;
+  word-break: break-word;
+}
+.head_p_up p:nth-child(3) {
+  color: #494949;
+  grid-row: 4/5;
+  word-break: break-word;
+}
+.sec_head2
 {
+
+    width: 100%;
+    height: 250px;
     display: grid;
-    grid-template-rows: [] 0px [] 350px [] 350px   ;
-    border: 1px solid rgb(0, 8, 255);
-    height: 1000px;
-
-    
-
-}
-.head
-{
-    border: 1px solid red;
-    height: 350px;
-    width: 100%;
-}
-.bg_head
-{
-    position: relative;
-}
-.head_img
-{
-    /* background-image: '../img/13960-mountain-peak-snow-clouds-sky-italy-4k.jpg'; */
-    width: 100%;
-    height: 100%;
-    background-position:center ;
-    background-size: contain;
-    position: absolute;
+    grid-template-columns: []12.5% []25% []25% []25% []12.5%;
 }
