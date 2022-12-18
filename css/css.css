@@ -43,6 +43,32 @@ body {
 }
 /* End Global RUles */
 
+/* start Services component */
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special-heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+
+/* End Services component */
+
 /* Start Header */
 .header {
   /* padding: 20px; */
@@ -179,3 +205,37 @@ body {
   font-size: 17px;
 }
 /* End landing */
+
+/* Start Services */
+
+.services
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.services .services-content
+{
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 100px;
+  
+}
+.services .services-content .srv
+{
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (max-width:767px)
+{
+  .services .services-content .srv
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* End Services */
